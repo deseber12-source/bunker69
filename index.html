@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunker 69 | Bar Underground en Coyoacán</title>
+    <link rel="icon" href="assets/img/favicon.ico" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Los CSS de componentes se importan desde main.css -->
+</head>
+<body>
+    <!-- Contenedores para componentes -->
+    <div data-component="header"></div>
+    <main>
+        <div data-component="hero"></div>
+        <div data-component="sobre-nosotros"></div>
+        <div data-component="servicios"></div>
+        <div data-component="galeria"></div>
+        <div data-component="testimonios"></div>
+        <div data-component="contacto"></div>
+    </main>
+    <div data-component="footer"></div>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/525512345678?text=Hola%2C%20quiero%20hacer%20una%20reserva%20en%20Bunker%2069" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Toast -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="fas" id="toast-icon"></i>
+            <span id="toast-message"></span>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/componentes.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/formularios.js"></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</body>
+</html>

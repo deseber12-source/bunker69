@@ -1,0 +1,75 @@
+/* Hero con formas geométricas */
+.hero {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--color-fondo);
+    overflow: hidden;
+    margin-top: 70px; /* espacio para header fijo */
+}
+
+.hero::before,
+.hero::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: var(--color-primario);
+    filter: blur(100px);
+    opacity: 0.3;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.hero::before {
+    top: -100px;
+    left: -100px;
+    background: var(--color-primario);
+}
+
+.hero::after {
+    bottom: -100px;
+    right: -100px;
+    background: var(--color-secundario);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 6rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 20px var(--color-primario);
+    color: white;
+    animation: neonPulse 2s infinite alternate;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes neonPulse {
+    from { text-shadow: 0 0 10px var(--color-primario), 0 0 20px var(--color-primario); }
+    to { text-shadow: 0 0 20px var(--color-secundario), 0 0 40px var(--color-secundario); }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}

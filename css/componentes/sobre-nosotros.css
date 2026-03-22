@@ -1,0 +1,36 @@
+.sobre-nosotros {
+    background: var(--color-fondo-secundario);
+    padding: 4rem 0;
+}
+
+.sobre-nosotros .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.sobre-nosotros-content h2 {
+    font-size: 3rem;
+    color: var(--color-primario);
+    margin-bottom: 1.5rem;
+}
+
+.sobre-nosotros-content p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.sobre-nosotros-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: var(--sombra-fuerte);
+    border: 2px solid var(--color-primario);
+}
+
+@media (max-width: 768px) {
+    .sobre-nosotros .container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

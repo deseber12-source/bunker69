@@ -1,0 +1,64 @@
+<section id="contacto" class="contacto">
+    <div class="container">
+        <h2>Reserva tu mesa</h2>
+        <div class="contacto-grid">
+            <div class="contacto-form">
+                <form id="form-contacto">
+                    <input type="hidden" name="cliente_id" value="bunker69">
+                    <div class="form-group">
+                        <label for="nombre">Nombre *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono *</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fecha">Fecha *</label>
+                            <input type="date" id="fecha" name="fecha_reserva" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="hora">Hora *</label>
+                            <input type="time" id="hora" name="hora_reserva" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="personas">Número de personas *</label>
+                        <select id="personas" name="personas">
+                            <option value="">Selecciona</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="comentarios">Comentarios adicionales</label>
+                        <textarea id="comentarios" name="comentarios" rows="3"></textarea>
+                    </div>
+                    <!-- Turnstile -->
+                    <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-theme="dark"></div>
+                    <button type="submit" class="btn">Enviar reserva</button>
+                </form>
+            </div>
+            <div class="contacto-mapa">
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.4!2d-99.1623!3d19.3500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0123456789%3A0x1234567890abcdef!2sAv.%20M%C3%A9xico%2069%2C%20Col.%20Del%20Carmen%2C%20Coyoac%C3%A1n%2C%20CDMX!5e0!3m2!1ses!2smx!4v1610000000000!5m2!1ses!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="info-contacto">
+                    <p><i class="fas fa-map-marker-alt"></i> Av. México 69, Col. Del Carmen, Coyoacán, CDMX</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+525512345678">+52 55 1234 5678</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:contacto@bunker69.com">contacto@bunker69.com</a></p>
+                    <p><i class="fas fa-clock"></i> Mar-Dom 5pm - 2am</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
